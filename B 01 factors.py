@@ -4,7 +4,6 @@ def statement_generator(statement, decoration):
 
 # display instructions
 def instructions():
-    statement_generator("the epic factor finder", "-")
     print('''
 say a number between 1 and 200
 \n say xxx to break loop
@@ -57,6 +56,10 @@ def factor(var_to_factor):
 
 # Main routine
 
+# Heading
+statement_generator("the epic factor finder", "-")
+
+# Want instructions? for instructions, you are gonna have to subscribe to epic factor finder plus, for only $2.99 a week!
 want_instructions = input("Press <Enter> to read instructions and any other key to continue")
 
 if want_instructions == "":
@@ -94,7 +97,7 @@ while True:
     # wooo headings
 
     if to_factor >1:
-        heading = f"factors of {to_factor}"
+        heading = f"Factors of {to_factor}"
     else:
         heading = "One is special!"
 
